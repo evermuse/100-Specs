@@ -16,6 +16,10 @@
  *
  */
 
+ var videogame_system;
+videogame_system = 'Atari';
+
+
 
 /* Step 3
  *
