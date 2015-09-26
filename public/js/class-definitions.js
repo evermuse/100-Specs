@@ -38,7 +38,7 @@ var sahara_animal = 'The Addax';
  * Capitalize the names.
  */
 
-var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Neptune', 'Uranus', 'Pluto'];
+var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn','Uranus', 'Neptune'];
 
 /* Step 5
  *
@@ -47,6 +47,8 @@ var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Neptun
  * each galilean moon of Jupiter
  *
  */
+
+ var galilean_moons = ['Io','Europa','Ganymede','Callisto'];
 
 
 /* Step 6 φ
