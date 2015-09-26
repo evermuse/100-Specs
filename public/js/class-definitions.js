@@ -422,6 +422,18 @@ function drink(beer) {
  *
  */
 
+function browseURL(browser) {
+
+  if (browsers.hasOwnProperty(browser) === true) {
+
+    return browsers[browser];
+
+  }
+
+  return false;
+
+}
+
 
 /* Step 25
  *
