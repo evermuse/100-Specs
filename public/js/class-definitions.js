@@ -500,11 +500,7 @@ function favoritePlanet(currentPlanet) {
 
     var indexOfPlanetToReturn = getRandom(0, max);
 
-    console.log(indexOfPlanetToReturn);
-
     var randomPlanet = planets[indexOfPlanetToReturn];
-
-    console.log(randomPlanet);
 
     return 'I\'m from ' + currentPlanet + ', but I wish I could go to ' + randomPlanet + '.';
 
@@ -570,6 +566,17 @@ Person.prototype.earnMoney = function(moneyAmount) {
  *
  */
 
+function purchaseLaptop(laptop) {
+
+  if (laptopCosts.hasOwnProperty(laptop)) {
+
+    return String(laptopCosts[laptop]);
+
+  }
+
+  return -1;
+
+}
 
 /* Step 29
  *
