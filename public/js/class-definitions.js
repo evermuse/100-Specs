@@ -154,7 +154,7 @@ var domains = {
  *
  */
 
- var browsers = {
+var browsers = {
 
   Chromium : 'google.com',
   Safari : 'apple.com',
@@ -163,7 +163,7 @@ var domains = {
   Sleipnir : 'fenrir-inc.com',
   Konqueror : 'konqueror.org'
 
- };
+};
 
 /* Step 13
  *
@@ -182,6 +182,23 @@ var domains = {
  *
  */
 
+var rainbow = {
+
+  colors : {
+
+    red : '#F0280A',
+    orange : '#FF8800',
+    yellow : '#FFDD00',
+    green : '#51AB0C',
+    blue : '#1593ED',
+    indigo : '#5215ED',
+    violet : '#A915ED'
+
+  },
+
+  isDouble : true
+
+};
 
 /* Step 14
  *
@@ -197,6 +214,7 @@ var domains = {
  *
  */
 
+var linuxFlavors = ['Gentoo', 'Fedora', 'Debian', 'Slackware', 'Red Hat', 'Bieber Linux'];
 
 /* Step 15
  *
