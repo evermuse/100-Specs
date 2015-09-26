@@ -387,6 +387,28 @@ function installLinux(linuxType) {
  *
  */
 
+function drink(beer) {
+
+  if (beers.hasOwnProperty(beer) === true) {
+
+    if (typeof beers[beer] === 'string') {
+
+      return 'This ' + beer + ' is ' + beers[beer] + '.';
+
+    }
+
+    if (Array.isArray(beers[beer])) {
+
+      return 'This ' + beer + ' is ' + beers[beer][0] + ' and ' +  beers[beer][1] + '.';
+
+    }
+
+  }
+
+  return false;
+
+}
+
 
 /* Step 24
  *
