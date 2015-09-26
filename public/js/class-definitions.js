@@ -339,11 +339,11 @@ function sahara_river() {
  *
  */
 
- function addNumbers(num1, num2) {
+function addNumbers(num1, num2) {
 
   return num1 + num2;
 
- }
+}
 
 
 /* Step 22
@@ -358,6 +358,16 @@ function sahara_river() {
  *
  */
 
+function installLinux(linuxType) {
+
+  if (linuxFlavors.indexOf(linuxType) !== -1) {
+
+    return true;
+
+  }
+
+  return false;
+}
 
 /* Step 23
  *
