@@ -90,6 +90,12 @@ var golden_ratio = 1.61803398874;
  *   unknown => undefined
  */
 
+var gender = {
+
+    female : 'female',
+    male : 'male',
+    unkownn : undefined
+};
 
 /* Step 10
  *
