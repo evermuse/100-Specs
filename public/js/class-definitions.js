@@ -445,6 +445,24 @@ function browseURL(browser) {
  *
  */
 
+function listLivingOrgClass() {
+
+  var returnString = [];
+  returnString.push('<ul>');
+
+  for (var i = 0; i < livingOrganismClassification.length; i++) {
+
+    returnString.push('<li>' + livingOrganismClassification[i] + '</li>');
+
+  }
+
+  returnString.push('</ul>');
+  returnString = returnString.join('');
+
+  return returnString;
+
+}
+
 
 /* Step 26
  *
