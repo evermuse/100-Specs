@@ -484,6 +484,35 @@ function listLivingOrgClass() {
  *
  */
 
+function favoritePlanet(currentPlanet) {
+
+  var index = planets.indexOf(currentPlanet);
+
+  if (index !== -1) {
+
+    var max = planets.length - 1;
+
+    var getRandom = function(min, max) {
+
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+
+    };
+
+    var indexOfPlanetToReturn = getRandom(0, max);
+
+    console.log(indexOfPlanetToReturn);
+
+    var randomPlanet = planets[indexOfPlanetToReturn];
+
+    console.log(randomPlanet);
+
+    return 'I\'m from ' + currentPlanet + ', but I wish I could go to ' + randomPlanet + '.';
+
+  }
+
+  return currentPlanet + ' is not a planet!';
+
+}
 
 /* Step 27
  *
