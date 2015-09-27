@@ -1155,7 +1155,9 @@ Scientist.prototype.addDiscovery = function(discovery) {
 
 function Animal(species, gender) {
 
-  this.species
+  this.species = species;
+  this.gender = gender;
+
 }
 
 /**
