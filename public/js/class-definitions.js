@@ -1392,6 +1392,17 @@ return 'Could not determine if warm-blooded';
  *
  */
 
+Vehicle.prototype.drive = function(streetName) {
+
+  if (typeof streetName === 'string' && streetName !== '') {
+
+    return 'Driving on ' + streetName;
+
+  }
+
+  return 'Driving forward';
+
+};
 
  /* Step 83
  *
