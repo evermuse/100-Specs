@@ -1457,6 +1457,18 @@ Shape.prototype.getType = function() {
  *
  */
 
+Box.prototype.openBox = function() {
+
+  if (this.isOpen === false) {
+
+    this.isOpen = true;
+    return true;
+
+  }
+
+  return false;
+
+};
 
  /* Step 85
  *
