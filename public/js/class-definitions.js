@@ -1222,11 +1222,11 @@ function Box(contents, isOpen) {
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
- function Door(isOpen) {
+function Door(isOpen) {
 
-  this.isOpen = isOpen;
+this.isOpen = isOpen;
 
- }
+}
 
 
 /**
@@ -1237,6 +1237,12 @@ function Box(contents, isOpen) {
  * @param {string} color The shoe color
  */
 
+function Shoe(size, color) {
+
+  this.size = size;
+  this.color = color;
+
+}
 
 /**
  * Step 56
