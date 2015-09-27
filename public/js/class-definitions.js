@@ -1588,7 +1588,7 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
  *
  */
 
-Meal.prototype.containsJunkFood = function(foods) {
+Meal.prototype.containsJunkFood = function() {
 
   var foodKey = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
 
@@ -1716,5 +1716,5 @@ var cookieMonsterBlocked = chocolateChip.swipedByCookieMonster('Tuesday');
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal(['ice cream', 'cookie', 'spinach']).containsJunkFood();
+var goodForYou = breakfast.containsJunkFood();
