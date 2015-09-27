@@ -884,6 +884,80 @@ Stapler.prototype.staplePapers = function(numberPapers) {
  *
  */
 
+function Scientist(name, money, age, gender, disciplines, discoveries) {
+
+  Person.call(this, name, money, age, gender);
+  this.disciplines = [];
+  this.discoveries = [];
+
+}
+
+Scientist.prototype = Object.create(Person.prototype, {
+
+  constructor : {
+
+    value : Scientist
+
+  }
+
+});
+
+Scientist.prototype.addDiscipline = function(newDiscipline) {
+
+  this.disciplines.push(newDiscipline);
+  return this.disciplines;
+
+};
+
+Scientist.prototype.checkDiscipline = function(discipline) {
+
+  if (this.disciplines.indexOf(discipline) !== -1 ) {
+
+    return true;
+
+  }
+
+  return false;
+
+};
+
+Scientist.prototype.addDiscovery = function(discovery) {
+
+  this.discoveries.push(discovery);
+
+  if (this.discoveries.length === 1) {
+
+    return 'I discovered ' + this.discoveries[0] + '.';
+
+  }
+
+  if (this.discoveries.length === 2) {
+
+    return 'I discovered ' + this.discoveries[0] + ' and ' + this.discoveries[1] + '.';
+
+  }
+
+  if (this.discoveries.length > 2) {
+
+    var newArray = [];
+
+    for (var i = 0; i < this.discoveries.length; i++) {
+
+      newArray.push(this.discoveries[i]);
+      newArray.push(', ');
+
+    }
+
+    newArray.pop();
+    var tail = newArray.pop();
+    newArray.push('and ');
+    newArray.push(tail);
+
+    return 'I discovered ' + newArray.join('') + '.';
+
+  }
+
+};
 
 /* Step 36
  *
@@ -1079,6 +1153,10 @@ Stapler.prototype.staplePapers = function(numberPapers) {
  * @param {string} gender  male or female
  */
 
+function Animal(species, gender) {
+
+  this.species
+}
 
 /**
  * Step 51
