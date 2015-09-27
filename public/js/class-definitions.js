@@ -1634,8 +1634,9 @@ var notWarmOrColdAnimal = bob.isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+
+var streetDriving = civic.drive('Gillespie Ave');
+var forwardDriving = forte.drive();
 
 
  /* Step 93
