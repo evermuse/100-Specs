@@ -803,6 +803,8 @@ PrincessLeia.prototype.marries = function(loveInterest) {
 
   }
 
+  return false;
+
 };
 
 /* Step 34
@@ -822,6 +824,25 @@ PrincessLeia.prototype.marries = function(loveInterest) {
  *   staplePapers
  *
  */
+
+function Stapler(color, maxPapers) {
+
+  this.color = color;
+  this.maxPapers = maxPapers;
+
+}
+
+Stapler.prototype.staplePapers = function(numberPapers) {
+
+  if (numberPapers <= this.maxPapers) {
+
+    return true;
+
+  }
+
+  return false;
+
+};
 
 
 /* Step 35
