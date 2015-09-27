@@ -1185,6 +1185,20 @@ function Vehicle(make, model) {
  *
  */
 
+function Shape(sides) {
+
+  if (sides > 2) {
+
+    this.sides = sides;
+
+  } else {
+
+    this.sides = null;
+
+  }
+
+}
+
 
 /**
  * Step 53
