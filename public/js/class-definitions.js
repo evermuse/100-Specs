@@ -1696,8 +1696,8 @@ var shortStory = singleStory.isATallStory();
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+var kitchenLightsOn = halogen.flipSwitch('on');
+var porchLightsOff = incandescent.flipSwitch();
 
 
  /* Step 99
